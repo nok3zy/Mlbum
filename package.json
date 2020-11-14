@@ -1,0 +1,24 @@
+{
+  "name": "album-project",
+  "version": "1.0.0",
+  "description": "album-project",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nok3zy/teamAlbum.git"
+  },
+  "author": "nok3zy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nok3zy/teamAlbum/issues"
+  },
+  "homepage": "https://github.com/nok3zy/teamAlbum#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },"scripts": {
+    "start" : "nodemon app.js"
+  }
+}
