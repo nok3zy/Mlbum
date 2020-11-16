@@ -1,4 +1,4 @@
-# Team-Album
+# Mlbum
 > This it team 105 database sysyem project. 
 
 ## Idea
