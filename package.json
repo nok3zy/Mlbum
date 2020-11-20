@@ -1,24 +1,24 @@
 {
   "name": "album-project",
   "version": "1.0.0",
-  "description": "album-project",
+  "description": "Mlbum",
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nok3zy/teamAlbum.git"
+    "url": "git+https://github.com/nok3zy/Mlbum.git"
   },
   "author": "nok3zy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nok3zy/teamAlbum/issues"
+    "url": "https://github.com/nok3zy/Mlbum/issues"
   },
-  "homepage": "https://github.com/nok3zy/teamAlbum#readme",
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
-  },"scripts": {
-    "start" : "nodemon app.js"
+  },
+  "scripts": {
+    "start": "nodemon app.js"
   }
 }
