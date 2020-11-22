@@ -1,0 +1,52 @@
+.pic_canvas{
+    position: relative;
+    top:17%;
+    z-index: 1;
+    height : 900px;
+    width:  900px;
+    background-color: transparent;
+}
+
+.form{
+    position: relative;
+    bottom:46%;
+    z-index:2;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgba(0,0,0,0.4);
+    margin-bottom: 50px;
+}
+
+.form_h1 {
+    font-weight: 600;
+    font-size : 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.form form{
+    margin: 20px 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form form input{
+    margin: 10px 10px;
+    text-align: center;
+}
+
+.form form .button{
+    margin: 10px 10px;
+    width: 60px;
+    height: 20px;
+}

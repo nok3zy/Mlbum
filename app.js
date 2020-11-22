@@ -8,7 +8,7 @@ const handleListen=()=>{
     console.log(`Listen on ${PORT}`)
 }
 
-app.use("/public",express.static("public"));
+app.use(express.static("public"));
 
 app.listen(PORT,handleListen);
 
