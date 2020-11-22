@@ -1,4 +1,4 @@
-.modal {
+.addBtn_modal {
     display: none;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,7 @@
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
-  
+
   /* Modal Content/Box */
   .modal_content {
     /* position: absolute;
@@ -25,3 +25,41 @@
   }
   
 
+
+
+  .pic_modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  .picmodal_content{
+    display: flex;
+    background-color: #fefefe;
+    margin: 20% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; 
+  }
+  .picmodal_content .modal_canvas{
+    background-color: red;
+    width:500px;
+    height:500px;
+  }
+
+  .picmodal_content .column{
+    display:flex;
+    width: 150px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  
