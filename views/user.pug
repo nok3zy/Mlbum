@@ -1,0 +1,21 @@
+extends layouts/main
+
+block content
+    .nav
+        .usecase
+            a(href="/")
+                i(class="fas fa-chevron-left")
+            a(href=routes.user(id))
+                h1(class="user_id") #{id}
+        .nav_option
+                a(href=`/${id}/makeGroup`) 
+                    i(class="fas fa-plus-square")
+    .main
+        canvas.canvas
+    
+    .crew_code
+        #{crew_code}
+    .crew_name
+        #{crew_name}
+
+    script(type="module", src="/public/js/user.js")

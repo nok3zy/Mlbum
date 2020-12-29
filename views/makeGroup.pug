@@ -1,0 +1,17 @@
+extends layouts/main
+
+block content
+    .nav
+        .usecase
+            a(href=`/${id}`)
+                i(class="fas fa-chevron-left")
+            a(href=`/${id}/makeGroup`)
+                h1 Group Making
+
+    .invite
+        .invite_inst
+            h2 Make a Crew!
+            h2 Invite your friend!
+        .invite_form
+            form(action=`/${id}/makeGroup`, method="post")
+                input(type="text", placeholder="Group Name", name="crew_name")

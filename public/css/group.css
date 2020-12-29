@@ -1,5 +1,3 @@
-@import "modal.css";
-
 .group_pic{
     overflow-y: auto;
     display: flex;
@@ -25,42 +23,10 @@
     box-shadow: inset 0px 0px 5px #ffffff;
 }
 
-.group_img{
+.group_img img{
     border :1px solid rgba(0,0,0,0.3);
     border-radius: 5px;
     width: 180px;
     height: 180px;
     margin: 20px;
-}
-
-
-.add_btn{
-    position: absolute;
-    bottom:50px;
-    right:50px;
-    border: none;
-}
-
-.add_btn button{
-    border:none;
-    background-color: transparent;
-    width: 50px;
-    height: 50px;
-    font-size: 40px;
-    cursor: pointer;
-    outline: 0;
-}
-.add_btn button:hover {color: #cceeee}
-
-.add_btn button:active {
-    transform: translateY(4px);
-  }
-
-.add_btn button i{
-    background-color: #ffffff;
-}
-
-.group_pic .group_img img{
-    width:180px;
-    height:180px;
 }

@@ -1,0 +1,10 @@
+extends layouts/main
+
+block content
+    .join
+        form(class="join_form", method="post", action=routes.join)
+            h1 Mlbum
+            input(type="text", name="ID",placeholder="ID", required=true)
+            input(type="password", name="PW",placeholder="PW", required=true)
+            input(type="password", name="PW2",placeholder="PW2", required=true)
+            input(class="btn" type="submit",value="JOIN")

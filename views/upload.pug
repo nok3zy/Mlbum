@@ -1,0 +1,20 @@
+extends layouts/main
+
+block content
+    .nav
+        .usecase
+            a(href=`/${id}/${group}`)
+                i(class="fas fa-chevron-left")
+            a(href=`/${id}/${group}/upload`)
+                h1 Upload
+
+    .upload
+        form(action=`/${id}/${group}/upload`,method="post", enctype="multipart/form-data")
+            input(type="file", id="file", name="imageFile", required=true, accept="image/*")
+            h1 TAG
+            input(class="form_tag" type="text", placeholder="#", name="tag",required=true)
+            h1 DESCRIPTION
+            textarea(class="form_des" name="description", placeholder="Description", required=true)
+            input(class="form_btn" type="submit", value="Upload IMAGE")
+    
+    script(type="module", src="/public/js/group.js")

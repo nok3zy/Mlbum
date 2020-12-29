@@ -27,7 +27,7 @@ export class Polygon {
     this.rotate = 0;
   }
 
-  clickPolygon(r,g,b){
+  clickPolygon(r,g,b,crew,id){
       let clickvalue = '#';
       
       if(r.length == 1 ) r = '0'+r;
@@ -35,16 +35,19 @@ export class Polygon {
       if(b.length == 1 ) b = '0'+b;
 
       clickvalue += (r.toUpperCase()+g.toUpperCase()+b.toUpperCase());
-      
+      const len = crew.length;
       for(let i =0; i <this.sides;i++){
         if(COLORS[i]==clickvalue){
-            console.log(`${i}번째 그룹`);
+            // console.log(`${i}번째 그룹`);
+            // crew[i]
+            if(i<len)
+              location.href= `/${id}/${crew[i]}`;
         }
       }
       
   }
 
-  animate(ctx,moveX) {
+  animate(ctx,moveX,crew_name) {
     ctx.save();
   
     const angle = PI2 / this.sides;
@@ -85,7 +88,12 @@ export class Polygon {
       ctx.font='48px malgun gothic';
       ctx.fillStyle="white";
       ctx.textBaseline="middle";
-      ctx.fillText(`${i}`,0,0);
+      if(i<crew_name.length)
+        ctx.fillText(`${crew_name[i]}`,0,0);
+      // if(i+crew_name.length>=8)
+      //   ctx.fillText(`${crew_name[i-(8-crew_name.length)]}`,0,0);
+      else
+        ctx.fillText(`-`,0,0);
 
       ctx.restore();
     }

@@ -1,0 +1,16 @@
+extends layouts/main
+
+block content
+    .nav
+        .usecase
+            a(href=`/${id}`)
+                i(class="fas fa-chevron-left")
+            a(href=`/${id}/${group}`)
+                h1 Invite Friends!
+
+    .invite
+        .invite_inst
+            h2 Who's your favorite hangout Friend?
+        .invite_form
+            form(action=`/${id}/${group}/invite`, method="post")
+                input(type="text", placeholder="Friend's ID", name="ID")

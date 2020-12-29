@@ -1,5 +1,7 @@
 .nav{
-    margin-top: 10px;
+    background-color: #fefefe;
+    padding:10px 0;
+    /* margin-top: 10px; */
     display :flex;
     justify-content: space-between;
     align-items: center;
@@ -33,6 +35,17 @@
     color: #cceeee;
 }
 
+.nav .nav_option{
+    display: flex;
+    align-items: center;
+}
+
+.nav .nav_option input{
+    width: 200px;
+    height:25px;
+    font-size:25px;
+    font-weight: 400;
+}
 
 .usecase h1{ 
     font-size: 40px;
@@ -45,6 +58,16 @@
     color: black;
     font-size: 30px;
     font-weight: 600;
-    margin-right: 8px;
+    margin-right: 5px;
     text-align: center;    
+}
+
+.nav .nav_option i{
+    margin:0 10px;
+}
+
+.nav .nav_option a{
+    margin: 0 10px;
+    background-color: transparent;
+    border:none;
 }

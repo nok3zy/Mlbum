@@ -19,7 +19,8 @@ class App{
             this.loaded(img);
             this.resize();
           };
-          img.src=`./image/${i}.jpg`;
+          // img.src=`./image/${i}.jpg`; //html상에서의.
+          img.src=`/public/image/${i}.jpg`;
           
         }
         

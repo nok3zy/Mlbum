@@ -1,0 +1,22 @@
+extends layouts/main
+
+block content
+    .nav
+        .usecase
+            a(href=`/${id}`)
+                i(class="fas fa-chevron-left")
+            a(href=`/${id}/detail`)
+                h1 profile
+    .profile
+         form(class="profile_form", method="post", action=`/${id}/detail`)
+            h1 ID : #{answer.id}
+            .form_nickname
+                h2 nickname
+                input(type="text", name="nickname",value=`${answer.nickname}`, required=true)
+            .form_pw
+                h2 password
+                input(type="password", name="PW",placeholder="PW", required=true)
+                input(type="password", name="PW2",placeholder="PW2", required=true)
+            .form_crew
+
+            input(class="btn" type="submit",value="change")

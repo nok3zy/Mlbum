@@ -1,0 +1,37 @@
+extends layouts/main
+include mixins/commentBlock
+block content
+    .nav
+        .usecase
+            a(href=`/${id}/${group}`)
+                i(class="fas fa-chevron-left")
+            a(href=`/${id}/${group}/${pic_code}`)
+                h1 picture
+        .nav_option
+            a(href=`/${id}/${group}/${pic_code}/delete`) delete
+
+    .photo  
+        .photo_content
+            //- img(src=`/${image.src}`)
+            img.photo_area(src=`/${pic.SRC}`)
+            .column
+                .dis
+                    h2 ##{pic.TAG}
+                    p Upload by [ #{pic.UPLOAD_BY} ]
+                    p #{pic.DESCRIPTION}
+
+
+        .photo_comment
+            each item in results
+                +commentBlock({
+                    COMMENT_BY : item.COMMENT_BY,
+                    CONTENT : item.CONTENT
+                })
+            
+            .comment_up
+                form(action=`/${id}/${group}/${pic_code}`, method="post")
+                    input(class="txt" name="comment" type="text")
+                    input(class="sb" type="submit" value="<")
+
+        
+    

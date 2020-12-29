@@ -1,0 +1,29 @@
+extends layouts/main
+include mixins/imageBlock
+
+block content
+    .nav
+        .usecase
+            a(href=`/${id}`)
+                i(class="fas fa-chevron-left")
+            a(href=`/${id}/${group}`)
+                h1 #{crew_name}
+        .nav_option
+            form(action=`/${id}/${group}`, method="post")
+                input(type="text", placeholder="#", name="tag")
+
+            a(href=`/${id}/${group}/upload`)
+                <i class="fas fa-camera-retro"></i>
+            a(href=`/${id}/${group}/invite`)
+                <i class="fas fa-user-plus"></i>
+
+    
+    .group_pic
+        each item in image
+            +imageBlock({
+                PIC_CODE : item.PIC_CODE,
+                SRC : item.SRC
+            })
+        
+            
+    //- script(type="module", src="/public/js/group.js")

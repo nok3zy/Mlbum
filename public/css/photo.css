@@ -1,0 +1,81 @@
+.photo{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;    
+}
+
+
+.photo .photo_content{
+    margin-top:20px;
+}
+
+
+.photo .photo_content .photo_area{
+    background-color: red;
+    width:600px;
+    height:600px;
+    border: none;
+    border-radius: 10px;
+}
+
+.photo .photo_content .column h2{
+    font-weight:600;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.photo .photo_content .column p{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top:5px;
+}
+
+.photo .photo_comment{
+    margin-top:20px;
+    padding-top: 10px;
+    width: 600px;
+    border-top:1px solid rgba(0, 0, 0, 0.3);
+}
+
+.photo .photo_comment .comment_box{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.comment_box .comment_dis .upload_by{
+    font-weight: 600;
+}
+
+.photo .photo_comment .comment_dis{
+    margin-bottom:5px;
+    display: flex;
+}
+.comment_content{
+    margin-left:10px;
+}
+
+.say{
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.comment_up{
+    margin-bottom:20px;
+}
+
+.comment_up .txt{
+    width: 530px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.comment_up .sb{
+    border-radius: 30px;
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+}
