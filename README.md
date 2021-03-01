@@ -1,29 +1,83 @@
 # Mlbum
-> 그룹 사진 앨범. 그룹을 기준으로 사진을 저장한다.    
-> [NOTION](https://www.notion.so/Mlbum-35901c0c7c7a423db920d66053e701cc)
 
+---
+
+## 프로젝트 설명
+
+그룹으로 관리하는 사진 앨범. 
+
+그룹에 속해있는 사람이라면 누구든지 사진을 업로드하고 삭제할 수 있다. 
+
+---
 
 ## 방향
-> - *Database* 학습을 위한 CRUD 구현. 
-> - 기본적인 프론트엔드는 틀만 만들고 CRUD에 중점
-> - E-R diagram 을 만들고 맵핑을 통해서 데이터베이스를 만든다.
+
+Database 학습을 위해서 CRUD 구현에 중점을 둔 프로젝트.
+
+---
 
 ## 구분
-> - Frontend  : VanilaJS + CSS + html + Pug
-> - Backend   : NodeJs 
-> - DB        : Mysql
+
+- Frontend : VanilaJS + CSS + html + pug
+- Backend : Nodejs
+- Db : mysql
+
+---
 
 ## 사용
-> - babel
-> - express
-> - cookie-parser
-> - body-parser
-> - morgan
-> - mysql
-> - multer
 
-## 아쉬운 점.
-> - 프로젝트의 마지막으로 webpack을 통해서 비주얼적인 측면을 추가하려 했으나 시간상 못 함.
-> - passport를 이용해서 Auth에 관련된 내용들을 처리하려 했으나 하지 못함.
-> - mysql을 이용한 쿼리가 더러움. 
+- **babel**
 
+        ES6 + 개발환경을 구축하여 프로젝트를 진행해보고자 시도해보았다.
+
+- **express**
+
+        NodeJs에서 기본적인 라우팅 등 구성이 잘 되어있어서 사용했다.
+
+- **cookie-parser / body-parser**
+
+        request를 보다 좋게 만들어줘서 확인하기 편하게 만들어준다.
+
+- **morgan**
+
+        loggin과 관련된 middleware
+
+- **mysql**
+
+        RDBS인 mysql을 사용하기 위해서 추가했다.
+
+- **multer**
+
+        파일 업로드를 위해서 추가한 middleware
+
+---
+
+## 아쉬운 점
+
+1. webpack을 사용해보려고 했으나 시간상의 문제로 하지 못 함.
+2. passport를 이용해서 Auth 부분을 구현하려 했으나 하지 못함.
+3. mysql 쿼리가 더러움.
+
+---
+
+## 사진
+
+### 로그인 화면
+
+![img/1.jpg](img/1.jpg)
+
+VanilaJS로 만든 원형 사진 틀.
+
+### 개인 화면
+
+Username : aaa
+
+![img/2.jpg](img/2.jpg)
+
+ **>**  VanilaJS로 구성하여 마우스에 움직임에 따라 회전한다.
+
+### 그룹화면
+
+![img/3.jpg](img/3.jpg)
+
+ **>** 바둑판 배열의 형태로 사진이 추가된다.
