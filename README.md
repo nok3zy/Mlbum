@@ -1,5 +1,7 @@
 # Mlbum
 > 그룹 사진 앨범. 그룹을 기준으로 사진을 저장한다.
+> [Notion](https://www.notion.so/Mlbum-35901c0c7c7a423db920d66053e701cc)
+
 
 ## 방향
 > - *Database* 학습을 위한 CRUD 구현. 
@@ -25,6 +27,3 @@
 > - passport를 이용해서 Auth에 관련된 내용들을 처리하려 했으나 하지 못함.
 > - mysql을 이용한 쿼리가 더러움. 
 
-<img src="./1.jpg" width="450px" height="300px"  alt="1"></img><br/>
-<img src="./2.jpg" width="450px" height="300px"  alt="2"></img><br/>
-<img src="./3.jpg" width="450px" height="300px"  alt="3"></img><br/>
