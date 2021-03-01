@@ -25,4 +25,6 @@
 > - passport를 이용해서 Auth에 관련된 내용들을 처리하려 했으나 하지 못함.
 > - mysql을 이용한 쿼리가 더러움. 
 
-<img src="/path/to/img.jpg" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
+<img src="/1.jpg" width="450px" height="300px"  alt="1"></img><br/>
+<img src="/2.jpg" width="450px" height="300px"  alt="2"></img><br/>
+<img src="/3.jpg" width="450px" height="300px"  alt="3"></img><br/>
