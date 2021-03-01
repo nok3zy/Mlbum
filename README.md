@@ -1,6 +1,6 @@
 # Mlbum
-> 그룹 사진 앨범. 그룹을 기준으로 사진을 저장한다.
-> [Notion](https://www.notion.so/Mlbum-35901c0c7c7a423db920d66053e701cc)
+> 그룹 사진 앨범. 그룹을 기준으로 사진을 저장한다.    
+> [NOTION](https://www.notion.so/Mlbum-35901c0c7c7a423db920d66053e701cc)
 
 
 ## 방향
